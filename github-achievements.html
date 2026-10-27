@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Achievements — how to earn every badge</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--ink:#e6edf3;--mute:#8b949e;--g:#3fb950;--y:#e3b341;--p:#a371f7;--b:#58a6ff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:16px/1.65 Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:inherit}
+header{position:sticky;top:0;z-index:10;background:#0d1117ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;gap:22px;height:58px}
+header b{font-weight:800}header nav{margin-left:auto;display:flex;gap:20px;font-size:15px;color:var(--mute)}
+header nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;gap:8px;align-items:center;background:var(--g);color:#04120a;font-weight:600;padding:11px 22px;border-radius:8px;border:0}
+.btn.o{background:none;border:1px solid var(--line);color:var(--ink)}
+.btn:hover{filter:brightness(1.12)}
+.hero{padding:70px 0 44px;text-align:center}
+.hero h1{font-size:clamp(32px,6vw,58px);line-height:1.1;font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--y),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mute);max-width:56ch;margin:20px auto 26px;font-size:18px}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:46px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin-bottom:6px}
+.lead{color:var(--mute);margin-bottom:24px;max-width:62ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.m{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.m .e{font-size:38px}.m h3{font-size:19px;margin:4px 0}
+.m p{color:var(--mute);font-size:15px}
+.tag{display:inline-block;font-size:12px;font-weight:600;border-radius:99px;padding:1px 10px;margin-top:10px;border:1px solid}
+.t1{color:var(--g)}.t2{color:var(--y)}.t3{color:var(--p)}
+.tiers{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--b);margin-top:8px}
+.chk{display:flex;gap:10px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;color:var(--mute);cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:var(--g)}
+.prog{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:20px}
+.bar{height:10px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--g),var(--y));transition:width .4s}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 18px;margin-bottom:10px}
+details[open]{border-color:var(--b)}
+summary{cursor:pointer;padding:14px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--y)}details[open] summary::after{content:"–"}
+details ol{padding:0 0 10px 20px;color:var(--mute)}details li{margin-bottom:6px}
+details p{color:var(--mute);padding-bottom:14px}
+code{font-family:'JetBrains Mono',monospace;background:#0d1117;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:13px;color:var(--ink)}
+.cta{background:linear-gradient(135deg,#1f2a1f,#1b1f33);border:1px solid var(--line);border-radius:16px;padding:34px;text-align:center}
+.cta p{color:var(--mute);margin:10px auto 20px;max-width:52ch}
+.note{border-left:3px solid var(--y);background:#e3b34114;padding:12px 16px;border-radius:0 8px 8px 0;font-size:15px;margin-top:20px}
+footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;color:var(--mute);font-size:14px}
+:focus-visible{outline:2px solid var(--b);outline-offset:2px}
+@media(max-width:700px){header nav a:not(:last-child){display:none}}
+@media(prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="w"><b>🏅 GitHub Achievements</b><nav><a href="#badges">Badges</a><a href="#guide">Guide</a><a href="#ask">Q&amp;A</a></nav></div></header>
+
+<div class="hero w">
+  <h1>How to earn <em>GitHub badges</em><br>step by step</h1>
+  <p>A simple guide to the Achievements shown on your GitHub profile: what they are, how to get them, and how to track your progress.</p>
+  <div class="row"><a class="btn" href="#badges">See all badges →</a><a class="btn o" id="star1" href="#" target="_blank" rel="noopener">⭐ Star this repository</a></div>
+</div>
+
+<section id="badges"><div class="w">
+  <h2>Badge list</h2>
+  <p class="lead">Tick a badge once you’ve earned it. Your progress is saved in your browser.</p>
+  <div class="prog"><b id="pt">0 / 6 badges</b><div class="bar"><i id="pb"></i></div></div>
+  <div class="grid" id="grid"></div>
+  <div class="note">Badges are only given for real activity, and GitHub may change the rules. Check your current badges at <code>github.com/your-username?tab=achievements</code>.</div>
+</div></section>
+
+<section id="guide"><div class="w">
+  <h2>Step-by-step guide</h2>
+  <p class="lead">Start with the easiest badges first.</p>
+  <details><summary>🔫 Quickdraw — close within 5 minutes</summary><ol><li>Open your repository and go to <b>Issues</b>, then click <b>New issue</b>.</li><li>Write a title and click <b>Submit new issue</b>.</li><li>Within 5 minutes, click <b>Close issue</b>.</li><li>The badge can take a few hours to appear on your profile.</li></ol></details>
+  <details><summary>🦈 Pull Shark — get 2 pull requests merged</summary><ol><li>Create a new <b>branch</b> in your repository (branch button → type a name).</li><li>Make a small change to a file on that branch and <b>commit</b> it.</li><li>Click <b>Compare &amp; pull request</b>, then <b>Create pull request</b>.</li><li>Click <b>Merge pull request</b>, then <b>Confirm merge</b>.</li><li>Repeat once more. Pull requests you send to other people’s repositories and get merged count too.</li></ol></details>
+  <details><summary>😎 YOLO — merge without a review</summary><p>You get this badge when you merge a pull request without anyone reviewing it. Guides online disagree: some say it works on your own repository, others say a second person is needed. Give it a try and see.</p></details>
+  <details><summary>⭐ Starstruck — reach 16 stars</summary><p>People star repositories they find useful or fun. Write a clear README, make something helpful, and share the link with friends and communities. Only real users should star it, so don’t fill it with fake accounts.</p></details>
+  <details><summary>🧠 Galaxy Brain — 2 accepted answers</summary><ol><li>Open the Discussions section (see the Q&amp;A block below) or the GitHub Community discussions.</li><li>In the <b>Q&amp;A</b> category, find a question you know how to answer that has no answer yet.</li><li>Write a clear, helpful reply.</li><li>If the asker clicks <b>Mark as answer</b>, it counts. You need 2 of these.</li></ol></details>
+  <details><summary>👥 Pair Extraordinaire — co-authored commit</summary><p>Co-author a commit with another person and get its pull request merged. Build a small project together with a friend.</p></details>
+</div></section>
+
+<section id="ask"><div class="w">
+  <div class="cta">
+    <h2>Got a question? Ask it, or answer one!</h2>
+    <p>Post your GitHub questions in Discussions. If you know the answer to someone else’s question, help them out. It’s good for them and for you.</p>
+    <div class="row"><a class="btn" id="disc" href="#" target="_blank" rel="noopener">💬 Go to Discussions</a><a class="btn o" id="star2" href="#" target="_blank" rel="noopener">⭐ Give a star</a></div>
+  </div>
+</div></section>
+
+<footer>If this was useful, give it a ⭐ and share it with friends. Good luck!</footer>
+
+<script>
+// ====== EDIT THESE TWO LINES ======
+var USER="mustafo-python";   // your GitHub username
+var REPO="medal-en";         // the repository name that holds this site
+// ==================================
+var $=function(i){return document.getElementById(i)};
+var base="https://github.com/"+USER+"/"+REPO;
+$("star1").href=base;$("star2").href=base;$("disc").href=base+"/discussions";
+var M=[
+ ["🔫","Quickdraw","Close an issue or pull request within 5 minutes of opening it.","Easy","t1",""],
+ ["🦈","Pull Shark","Get your pull requests merged (2 needed for the first level).","Easy","t1","2 · 16 · 128 · 1024"],
+ ["😎","YOLO","Merge a pull request without a review.","Medium","t2",""],
+ ["⭐","Starstruck","Create a repository that collects stars (16 for the first level).","Medium","t2","16 · 128 · 512"],
+ ["🧠","Galaxy Brain","Get 2 of your Discussions answers marked as accepted.","Hard","t3",""],
+ ["👥","Pair Extraordinaire","Co-author a commit in a merged pull request.","Hard","t3",""]
+];
+var done={};try{done=JSON.parse(localStorage.getItem("medal_en")||"{}")}catch(e){}
+function draw(){
+  $("grid").innerHTML=M.map(function(m,i){return '<div class="m"><div class="e">'+m[0]+'</div><h3>'+m[1]+'</h3><p>'+m[2]+'</p><span class="tag '+m[4]+'">'+m[3]+'</span>'+(m[5]?'<div class="tiers">Levels: '+m[5]+'</div>':'')+'<label class="chk"><input type="checkbox" data-i="'+i+'"'+(done[i]?" checked":"")+'> I earned this</label></div>'}).join("");
+  var n=Object.keys(done).filter(function(k){return done[k]}).length;
+  $("pt").textContent=n+" / "+M.length+" badges"+(n==M.length?" 🎉":"");$("pb").style.width=(n/M.length*100)+"%";
+}
+$("grid").onchange=function(e){var i=e.target.dataset.i;if(i==null)return;done[i]=e.target.checked;try{localStorage.setItem("medal_en",JSON.stringify(done))}catch(x){}draw()};
+draw();
+</script>
+</body>
+</html>
